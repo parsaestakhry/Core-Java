@@ -9,6 +9,16 @@ public class Hello {
         char c = 'a';
         boolean b = true;
 
+
+        double num = 12e10;
+        char ca = 'e';
+        System.out.println("");
+
+
+
+
+        System.out.println(num);
+
         
         System.out.println("hello world from java");
         
