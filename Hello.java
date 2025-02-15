@@ -1,9 +1,14 @@
 public class Hello {
     public static void main(String[] args) {
-
-        for (int i = 0; i <= 10; i++) {
-            System.out.println("Hello, World! " + i);
-        }
-
+        int i = 0;
+        do {
+            System.out.println("Hello, World!");
+        } while (i > 10);
     }
 }
+
+
+// oop
+// property and a behavior is in a class
+// class is a blueprint for an object
+// object is an instance of a class
