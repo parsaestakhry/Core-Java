@@ -1,9 +1,7 @@
 public class Hello {
     public static void main(String[] args) {
-        int i = 0;
-        do {
-            System.out.println("Hello, World!");
-        } while (i > 10);
+        Calculator calculator = new Calculator();
+        System.out.println(calculator.add(1, 2));
     }
 }
 
@@ -12,3 +10,15 @@ public class Hello {
 // property and a behavior is in a class
 // class is a blueprint for an object
 // object is an instance of a class
+
+class Calculator {
+    // public: access modifier means that the method is visible and can be called from other objects of other types
+    // int: return type means that the method returns an integer value
+    // add: method name
+    // (int num1, int num2): list of parameters means that the method accepts two parameters, both of type int
+    // { ... }: method body
+    // return num1 + num2: return statement means that the method returns the sum of the two parameters
+    public int add(int num1, int num2) {
+        return num1 + num2;
+    }
+}
