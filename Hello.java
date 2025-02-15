@@ -1,26 +1,11 @@
 public class Hello {
     public static void main(String[] args) {
-
-
-        byte by = 2;
-        short sh = 3;
-        long lg = 232321l;
-        double f = 5.8;
-        char c = 'a';
-        boolean b = true;
-
-
-        double num = 12e10;
-        char ca = 'e';
-        System.out.println("");
-
-
-
-
-        System.out.println(num);
-
         
-        System.out.println("hello world from java");
-        
+        int num1 = 7;
+        // int num2 = 5;
+        // int result = num1 % num2;
+        num1 *= 2;
+        System.out.println(num1);
+
     }
 }
