@@ -1,11 +1,9 @@
 public class Hello {
     public static void main(String[] args) {
-        
-        int num1 = 7;
-        // int num2 = 5;
-        // int result = num1 % num2;
-        num1 *= 2;
-        System.out.println(num1);
+
+        for (int i = 0; i <= 10; i++) {
+            System.out.println("Hello, World! " + i);
+        }
 
     }
 }
