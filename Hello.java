@@ -1,10 +1,12 @@
 public class Hello {
     public static void main(String[] args) {
-        Calculator calculator = new Calculator();
-        System.out.println(calculator.add(1, 2));
+        Computer computer = new Computer();
+
+        String result = computer.getMeAPen(1);
+        System.out.println(result);
+        computer.playMusic();
     }
 }
-
 
 // oop
 // property and a behavior is in a class
@@ -12,13 +14,32 @@ public class Hello {
 // object is an instance of a class
 
 class Calculator {
-    // public: access modifier means that the method is visible and can be called from other objects of other types
+    // public: access modifier means that the method is visible and can be called
+    // from other objects of other types
     // int: return type means that the method returns an integer value
     // add: method name
-    // (int num1, int num2): list of parameters means that the method accepts two parameters, both of type int
+    // (int num1, int num2): list of parameters means that the method accepts two
+    // parameters, both of type int
     // { ... }: method body
-    // return num1 + num2: return statement means that the method returns the sum of the two parameters
+    // return num1 + num2: return statement means that the method returns the sum of
+    // the two parameters
     public int add(int num1, int num2) {
         return num1 + num2;
+    }
+}
+
+class Computer {
+    // void: return type means that the method does not return a value
+    public void playMusic() {
+        System.out.println("Playing music");
+    }
+
+    public String getMeAPen(int cost) {
+        if (cost >= 2) {
+            return "Pen";
+        } else {
+            return "No pen";
+        }
+
     }
 }
