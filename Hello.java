@@ -1,7 +1,9 @@
 public class Hello {
     public static void main(String[] args) {
         Computer computer = new Computer();
-
+        Calculator calculator = new Calculator();
+        // method overloading
+        int sum = calculator.add(1, 4, 5);
         String result = computer.getMeAPen(1);
         System.out.println(result);
         computer.playMusic();
@@ -26,6 +28,17 @@ class Calculator {
     public int add(int num1, int num2) {
         return num1 + num2;
     }
+    // method overloading
+
+    public int add(int num1, int num2, int num3) {
+        return num1 + num2 + num3;
+    }
+
+    // method overloading
+    public double add(double num1, double num2) {
+        return num1 + num2;
+    }
+
 }
 
 class Computer {
