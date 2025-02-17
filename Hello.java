@@ -25,7 +25,11 @@ class Calculator {
     // { ... }: method body
     // return num1 + num2: return statement means that the method returns the sum of
     // the two parameters
+
+    // local variable
+    int num;
     public int add(int num1, int num2) {
+        // instance variables
         return num1 + num2;
     }
     // method overloading
