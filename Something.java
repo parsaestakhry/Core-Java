@@ -4,6 +4,7 @@ class Human {
     private int age = 20;
     private String name = "John";
     // public: access modifier means that the method is visible and can be called from other objects of other types
+    // encapsulation: the field is private and can only be accessed through a public method
     public int getAge() {
         return age;
     }
