@@ -1,10 +1,16 @@
 public class Hello {
+    // static: method belongs to the class and not an instance of the class
     public static void main(String[] args) {
-        Computer computer = new Computer();
-        // method overloading
-        String result = computer.getMeAPen(1);
-        System.out.println(result);
-        computer.playMusic();
+        Mobile mobile = new Mobile();
+        mobile.brand = "Samsung";
+        mobile.price = 1000;
+        mobile.network = "4G";
+        Mobile mobile2 = new Mobile();
+        mobile2.brand = "Apple";
+        mobile2.price = 2000;
+        mobile2.network = "5G";
+        
+
     }
 }
 
@@ -56,5 +62,43 @@ class Computer {
             return "No pen";
         }
 
+    }
+}
+
+
+class Mobile {
+    String brand;
+    int price;
+    String network;
+    // static: the name property is shared by all instances of the Mobile class and if it is changed in one instance, it will be changed in all instances
+    static String name;
+
+    // will be called only once 
+    // it is called first because 
+    static {
+        name = "";
+        System.out.println("Static block");
+    }
+
+    // default constructor
+    public Mobile() {
+        brand = "";
+        price= 200;
+        network = "5G";
+        name = "iPhone";
+        System.out.println("Constructor");
+
+    }
+
+    public void showDetails() {
+        System.out.println("Brand: " + brand);
+        System.out.println("Price: " + price);
+        System.out.println("Network: " + network);
+        System.out.println("Name: " + name);
+    }
+    // cannot call instance methods from static methods or can not call non static methods directly from class 
+    // only can use static variables inside static methods
+    public static void showDetailsStatic() {
+        System.out.println("Name: " + name);
     }
 }
