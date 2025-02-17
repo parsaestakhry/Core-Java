@@ -8,7 +8,6 @@ class Student {
 
 public class Demo {
     public static void main(String[] args) {
-        int nums[] = new int[4];
         Student student = new Student();
         student.rollno = 1;
         student.name = "John";

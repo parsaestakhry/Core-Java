@@ -1,9 +1,7 @@
 public class Hello {
     public static void main(String[] args) {
         Computer computer = new Computer();
-        Calculator calculator = new Calculator();
         // method overloading
-        int sum = calculator.add(1, 4, 5);
         String result = computer.getMeAPen(1);
         System.out.println(result);
         computer.playMusic();
