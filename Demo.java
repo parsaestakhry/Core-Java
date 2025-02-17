@@ -1,22 +1,42 @@
+class Student {
+    int rollno;
+    String name;
+    int marks;
+
+}
+
+
 public class Demo {
     public static void main(String[] args) {
-        int nums[][] = new int[3][]; // jagged array
-        
-        // different sizes of an array
-        nums[0] = new int[2];
-        nums[1] = new int[3];
-        nums[2] = new int[4];
+        int nums[] = new int[4];
+        Student student = new Student();
+        student.rollno = 1;
+        student.name = "John";
+        student.marks = 90;
 
-        for (int i = 0; i < nums.length; i++) {
-            for (int j = 0; j < nums[i].length; j++) {
-                nums[i][j] = (int) (Math.random() * 10);
-                System.out.println(nums[i][j]);
-            }
-            System.out.println();
-        }
+        Student student2 = new Student();
+        student2.rollno = 2;
+        student2.name = "Jane";
+        student2.marks = 80;
 
+        Student student3 = new Student();
+        student3.rollno = 3;
+        student3.name = "Doe";
+        student3.marks = 70;
+
+
+        Student[] students = new Student[3];
+        students[0] = student;
+        students[1] = student2;
+        students[2] = student3;
        
         
+        for (int i = 0; i < students.length; i++) {
+            System.out.println(students[i].rollno);
+            System.out.println(students[i].name);
+            System.out.println(students[i].marks);
+            System.out.println("************");
+        }
 
     }
 }
