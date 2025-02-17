@@ -31,12 +31,19 @@ public class Demo {
         students[2] = student3;
        
         
-        for (int i = 0; i < students.length; i++) {
-            System.out.println(students[i].rollno);
-            System.out.println(students[i].name);
-            System.out.println(students[i].marks);
+        
+
+
+        for (Student s : students) {
+            System.out.println(s.rollno);
+            System.out.println(s.name);
+            System.out.println(s.marks);
             System.out.println("************");
         }
+        
+
+        String name = new String("Snake");
+        System.out.println(name.charAt(2));
 
     }
 }
