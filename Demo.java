@@ -45,5 +45,11 @@ public class Demo {
         String name = new String("Snake");
         System.out.println(name.charAt(2));
 
+        String combined = name.concat(" Eater");
+        System.out.println(combined);
+        String name1 = "hello";
+        String name2 = "hello";
+        System.out.println(name1.equals(name2));
+
     }
 }
