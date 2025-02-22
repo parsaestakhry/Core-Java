@@ -4,9 +4,15 @@ public class Inh {
         Calc calculator = new Calc();
         AdvancedCalculator advancedCalculator = new AdvancedCalculator();
         System.out.println(advancedCalculator.add(2, 0));
-        
-       
+
+        AwsomeCalculator awesomeCalculator = new AwsomeCalculator();
+        System.out.println(awesomeCalculator.power(2, 3));
+
     }
+    
+
+    
+
 }
 
 
